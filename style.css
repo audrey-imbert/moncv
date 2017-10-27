@@ -1,0 +1,327 @@
+<style>
+
+      p {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      h1 {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      h2 {
+        font-family: 'Open Sans', sans-serif;
+        color: #6b77f4;
+      }
+
+      h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+      }
+
+      h4 {
+        font-family: 'Open Sans', sans-serif;
+        color: #6b77f4;
+      }
+
+      table {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      header{
+         position:fixed;
+         background: #6b77f4;
+         opacity: 0.7;
+         width: 950px;
+         height:100px;
+         top:0;
+         left:0;
+         right:0;
+         border-bottom: 3px double;
+         z-index: 2
+      }
+      body {
+        background-image:linear-gradient(to right, white, grey);
+        position:relative;
+      }
+
+      input{
+        color: white; 
+        border-radius:16px;
+        background-color: #6b77f4;
+      }
+
+      nav{
+        margin-left: 980px;
+        margin-top: 30px;
+      }
+
+      section{
+        padding: 30px;
+      }
+
+      img{
+        z-index:1;
+        max-width: 100%;
+        height: auto;
+
+      }
+
+      .photo {
+        border-radius: 12px;
+      }
+
+      .contenu {
+        position: relative;
+        width: 50%;
+      }
+
+      .photosport {
+        border-radius: 15px;
+        display: block;
+        width: 80%;
+        height: auto;
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: #6b77f4;
+        overflow: hidden;
+        width: 80%;
+        height: 0;
+        transition: .5s ease;
+      }
+
+      .contenu:hover .overlay {
+        bottom: 0;
+        height: 100%;
+      }
+
+      .textesurimage{
+        white-space: nowrap; 
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      .menu {
+        height: 100%;
+        width: 350px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        opacity: 0.7;
+        overflow-x: hidden;
+        padding-top: 20px;
+        border-left: thick solid;
+        border-color: #6b77f4;
+        font-family: 'Open Sans Condensed', sans-serif;
+      }
+
+      .row{
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      .nav nav-pills flex-column{
+        height: 100%;
+        width: 350px;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        padding-top: 20px;
+        border-left: thick solid;
+        font-family: 'Open Sans Condensed', sans-serif;
+      }
+
+      .nav-pills .active.nav-link{
+        background-color: #6b77f4;
+      }
+
+      #nom{
+        padding-left: 450px;
+      }
+
+      #photochinois{
+        margin-left: 200px;
+      }
+
+      #myphoto{
+        border-radius: 30px;
+      }
+
+      #introduction {
+        padding-top: 150px;
+        padding-right: 300px;
+    	}
+
+    	#objectif {
+    		color: #6b77f4;
+    		font-weight: bold;
+    	}
+
+    	
+
+    	#tem {
+			  max-width: 900px;
+        border-bottom: 2px dotted;
+        text-align: center;
+    	}
+
+    	#Prepa {
+			  max-width: 900px;
+        border-bottom: 2px dotted;
+        text-align: center;
+    	}
+
+    	#Bac {
+			  max-width: 900px;
+        border-bottom: 1px double;
+        text-align: center;
+    	}
+
+    	#parcourspro {
+			  max-width: 900px;
+        border-bottom: 2px dotted;
+    	}
+
+    	#parcoursasso {
+			  max-width: 900px;
+       border-bottom: 1px double;       
+    	}
+
+    	#competences {
+        border-bottom: 2px dotted;
+    	}
+
+      
+
+      #header{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+    
+
+      #navbar{
+        position: fixed;
+      }
+
+
+      
+
+      #photoskills{
+        margin-left: 200px;
+        width: 600px;
+      }
+
+      #contact{
+        border-bottom: 2px dotted;
+      }
+
+      #passions{
+        border-bottom: 2px dotted;
+      }
+
+      #comptech{
+        border-bottom: 2px dotted;
+      }
+
+      #school{
+        border-bottom: 2px dotted;
+      }
+
+      #parcoursasso{
+        border-bottom: 2px dotted;
+      }      
+
+      #sectionmespassions{
+        padding: 180px;
+      }
+
+
+     @media screen and (max-device-width: 480px),      
+      screen and (max-width: 480px) {
+        #navbar{
+          visibility: hidden;
+        }
+        #smalldevice{
+          margin-top: 0px;
+          margin-left: 0px;
+          position: fixed;
+          z-index: 2;
+        }
+        header{
+          visibility: hidden;
+        }
+        #introduction{
+          padding-right: 0px;
+        }
+      } 
+
+      @media screen and (min-device-width: 480px),      
+      screen and (min-width: 480px){
+        #smalldevice{
+          visibility: hidden;
+        }
+        #myphoto{
+          margin-top:150px;
+        }
+
+      }
+
+
+
+
+@-webkit-keyframes gear-moves {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes gear-moves {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+
+
+@keyframes transition{
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(500px) rotate(180deg);
+  }
+  100%{
+    transform: translateX(1000px) rotate(360deg);
+  }
+}
+#gear{
+  animation: transition 10s infinite;
+}
+
+
+
+
+
+
+
+
+
+     </style>
